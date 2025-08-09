@@ -90,7 +90,7 @@ function renderBandSocial({ facebook, instagram, youtube, spotify }) {
 function openBandModal({ name, origin, genre, youtubeId, socials }) {
   if (!bandModal) return;
   bandModalTitle.textContent = name || 'Banda';
-  bandMeta.textContent = `${origin || '—'} · ${genre || '—'}`;
+  bandMeta.textContent = `${genre || '—'} · ${origin || '—'}`;
   const src = youtubeId ? `https://www.youtube.com/embed/${youtubeId}?autoplay=1&rel=0` : '';
   bandYouTube.setAttribute('src', src);
   renderBandSocial(socials || {});
@@ -113,6 +113,11 @@ if (bandModal) {
       closeBandModal();
     }
   });
+}
+
+const bandOverlay = document.getElementById('bandOverlay');
+if (bandOverlay) {
+  bandOverlay.addEventListener('click', closeBandModal);
 }
 
 document.addEventListener('keydown', (e) => {
