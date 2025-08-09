@@ -1,0 +1,37 @@
+/* Base tweaks complementing Tailwind */
+html, body {
+  scroll-behavior: smooth;
+}
+
+:focus-visible {
+  outline: 2px solid #39d52d;
+  outline-offset: 2px;
+}
+
+body {
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
+
+/* Reveal on scroll */
+.reveal {
+  opacity: 0;
+  transform: translateY(12px);
+  transition: opacity 500ms ease, transform 500ms ease;
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* Glitch effect (subtle) */
+@keyframes glitch-jitter {
+  0% { text-shadow: 2px 0 0 rgba(57,213,45,.7), -1px 0 0 rgba(181,0,33,.7); filter: none; }
+  20% { text-shadow: -2px 0 0 rgba(57,213,45,.7), 1px 0 0 rgba(181,0,33,.7); }
+  40% { text-shadow: 3px 0 0 rgba(57,213,45,.7), -2px 0 0 rgba(181,0,33,.7); }
+  60% { text-shadow: -2px 0 0 rgba(57,213,45,.7), 2px 0 0 rgba(181,0,33,.7); }
+  80% { text-shadow: 2px 0 0 rgba(57,213,45,.7), -1px 0 0 rgba(181,0,33,.7); }
+  100% { text-shadow: 0 0 0 rgba(0,0,0,0), 0 0 0 rgba(0,0,0,0); }
+}
+.glitch, .glitch-hover:hover {
+  animation: glitch-jitter 750ms steps(2, end) infinite;
+}
