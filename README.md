@@ -18,7 +18,7 @@
 - **Principal:** Negro (#000000)
 - **Auxiliar:** #141414
 - **Acento moderado:** Rojo
-- **Links específicos:** #39d52d (usar con moderación)
+- **Links específicos:** #39d52d (usar con moderación )
 
 ### Estilo General
 - **Aesthetic:** Película B de terror
