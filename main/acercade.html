@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Vulgar Feast | Acerca de (Patrocinadores)</title>
+    <meta
+      name="description"
+      content="Conoce la marca, el festival y nuestro alcance en ediciones anteriores. Media kit web para patrocinadores."
+    />
+    <meta
+      name="keywords"
+      content="patrocinio, media kit, festival, metal, punk, hardcore, Guadalajara"
+    />
+
+    <meta
+      property="og:title"
+      content="Vulgar Feast | Acerca de (Patrocinadores)"
+    />
+    <meta
+      property="og:description"
+      content="Conoce la marca, el festival y nuestro alcance en ediciones anteriores. Media kit web para patrocinadores."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://vulgarfeast.com/acercade" />
+    <meta property="og:image" content="./assets/logoletras.png" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Vulgar Feast | Acerca de (Patrocinadores)"
+    />
+    <meta
+      name="twitter:description"
+      content="Conoce la marca, el festival y nuestro alcance en ediciones anteriores. Media kit web para patrocinadores."
+    />
+    <meta name="twitter:image" content="./assets/logoletras.png" />
+
+    <meta name="theme-color" content="#39d52d" />
+
+    <!-- Tailwind CSS via CDN and theme to match index -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                50: "#ecfdf5",
+                100: "#d1fae5",
+                200: "#a7f3d0",
+                300: "#6ee7b7",
+                400: "#34d399",
+                500: "#10b981",
+                600: "#39d52d",
+                700: "#2fb127",
+                800: "#23851e",
+                900: "#185915",
+              },
+              horrorGreen: "#b50021",
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- Tipografía -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./main.css" />
+    <link rel="icon" href="./assets/favicon.ico" type="image/x-icon" />
+  </head>
+  <body class="bg-neutral-950 text-neutral-100 antialiased">
+    <!-- Navbar (reutilizado, con anclas locales) -->
+    <header
+      class="fixed top-0 inset-x-0 z-50 border-b border-neutral-800/60 backdrop-blur supports-[backdrop-filter]:bg-neutral-950/70"
+    >
+      <nav
+        class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between"
+      >
+        <a href="#hero" class="flex items-center gap-3">
+          <img
+            src="./assets/logoletras.png"
+            alt="Vulgar Topic"
+            class="h-12 w-auto"
+            loading="lazy"
+          />
+          <span class="sr-only">Vulgar Feast</span>
+        </a>
+        <button
+          id="mobileMenuBtn"
+          class="md:hidden inline-flex items-center justify-center rounded-md p-2 text-[#39d52d] hover:text-white hover:bg-neutral-800/60 focus:outline-none focus:ring-2 focus:ring-brand-600"
+        >
+          <span class="sr-only">Abrir menú</span>
+          <svg
+            class="h-6 w-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            ></path>
+          </svg>
+        </button>
+        <div
+          id="desktopNav"
+          class="hidden md:flex items-center gap-6 text-lg text-neutral-500"
+        >
+          <a href="#vulgartopic" class="hover:text-white glitch-hover"
+            >Vulgar Topic</a
+          >
+          <a href="#vulgarfeast" class="hover:text-white glitch-hover"
+            >Vulgar Feast</a
+          >
+          <a href="#alcance" class="hover:text-white glitch-hover">Alcance</a>
+          <a href="#ediciones" class="hover:text-white glitch-hover"
+            >Ediciones</a
+          >
+        </div>
+      </nav>
+      <div
+        id="mobileNav"
+        class="md:hidden hidden border-t border-neutral-800/60"
+      >
+        <div class="space-y-1 px-4 py-3 text-neutral-300 text-sm">
+          <a
+            href="#vulgartopic"
+            class="block px-3 py-2 rounded hover:bg-neutral-800/60"
+            >Vulgar Topic</a
+          >
+          <a
+            href="#vulgarfeast"
+            class="block px-3 py-2 rounded hover:bg-neutral-800/60"
+            >Vulgar Feast</a
+          >
+          <a
+            href="#alcance"
+            class="block px-3 py-2 rounded hover:bg-neutral-800/60"
+            >Alcance</a
+          >
+          <a
+            href="#ediciones"
+            class="block px-3 py-2 rounded hover:bg-neutral-800/60"
+            >Ediciones</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <section
+        id="hero"
+        class="relative isolate pt-32 md:pt-36 lg:pt-20 overflow-hidden"
+      >
+        <div
+          class="absolute inset-0 -z-10 bg-gradient-to-b from-neutral-900 via-neutral-950 to-black"
+        ></div>
+        <div
+          class="absolute -z-10 inset-0 opacity-25"
+          aria-hidden="true"
+          style="
+            background-image: radial-gradient(
+                circle at 20% 10%,
+                rgba(57, 213, 45, 0.2),
+                transparent 30%
+              ),
+              radial-gradient(
+                circle at 80% 10%,
+                rgba(181, 0, 33, 0.12),
+                transparent 30%
+              ),
+              radial-gradient(
+                circle at 50% 100%,
+                rgba(57, 213, 45, 0.15),
+                transparent 35%
+              );
+          "
+        ></div>
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="grid lg:grid-cols-2 gap-10 items-center">
+            <div class="reveal">
+              <h1
+                class="mt-3 text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight tracking-tight"
+                style="
+                  font-family: Oswald, system-ui, -apple-system, 'Inter', Arial,
+                    sans-serif;
+                "
+              >
+                Vulgar Feast
+              </h1>
+              <p
+                style="color: #39d52d"
+                class="mt-3 text-xl text-neutral-300 max-w-xl"
+              >
+                Media kit web
+              </p>
+            </div>
+            <div class="lg:justify-self-end reveal">
+              <img
+                src="./assets/logo.png"
+                alt="Vulgar Topic"
+                class="w-full max-w-xs mx-auto opacity-90"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Acerca de Vulgar Topic -->
+      <section
+        id="vulgartopic"
+        class="py-20 border-t border-neutral-900 bg-neutral-950"
+      >
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <h2
+            class="text-3xl sm:text-4xl font-bold reveal"
+            style="
+              font-family: Oswald, system-ui, -apple-system, 'Inter', Arial,
+                sans-serif;
+            "
+          >
+            Acerca de Vulgar Topic
+          </h2>
+          <div class="mt-8 space-y-6 text-neutral-300 text-lg reveal">
+            <p>
+              <a
+                href="https://vulgartopic.com/"
+                target="_blank"
+                class="hover:text-white glitch-hover"
+                style="color: #39d52d"
+                >Vulgar Topic</a
+              >, revista digital dedicada a la promoción del acontecer local y
+              nacional de la música punk, hardcore y metal, cumple <b>diez años</b> de
+              actividades y lo celebrará con un concierto gratuito el <b>sábado 18
+              de octubre de 2025 en Anexo Independencia</b>.
+            </p>
+            <p>
+              <b>Fundada en 2015</b> con la premisa de dar voz, plataforma y relevancia
+              a los creadores que conforman la estridente escena tapatía, <b>Vulgar Topic</b> 
+              se ha posicionado como uno de los difusores digitales con
+              más reconocimiento, no solo del estado de Jalisco, sino alrededor
+              del <b>país</b>.
+            </p>
+            <p>
+              Con una nutrida legión de seguidores en las redes sociales (más de
+              9 mil), su contenido se amplifica a través del
+              <a
+                href="https://topicovulgar.com/"
+                target="_blank"
+                class="hover:text-white glitch-hover"
+                style="color: #39d52d"
+                >Tópico Vulgar</a
+              >, un <b>podcast</b> que puede encontrarse en todos los servicios de
+              streaming y aplicaciones dedicadas a este formato de contenido.
+            </p>
+            <p>
+              En agradecimiento a la sólida comunidad de artistas y público que
+              les ha cobijado durante estos años, VT presentará la tercera
+              edición del
+              <a
+                href="https://vulgarfeast.com/"
+                target="_blank"
+                class="hover:text-white glitch-hover"
+                style="color: #39d52d"
+                >Vulgar Feast</a
+              >, festival que reúne a agrupaciones provenientes de distintos
+              géneros, cuyas trayectoria son tanto consolidadas como emergentes.
+            </p>
+          </div>
+          <div class="mt-8 reveal">
+            <div
+              class="aspect-[3/2] w-full rounded-xl overflow-hidden border border-neutral-800 bg-neutral-900/50"
+            >
+              <img
+                src="./assets/publico1.jpg"
+                alt="Público del festival - imagen 1"
+                class="h-full w-full object-cover object-center"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Acerca de Vulgar Feast -->
+      <section id="vulgarfeast" class="py-20 border-t border-neutral-900">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <h2
+            class="text-3xl sm:text-4xl font-bold reveal"
+            style="
+              font-family: Oswald, system-ui, -apple-system, 'Inter', Arial,
+                sans-serif;
+            "
+          >
+            Acerca de Vulgar Feast
+          </h2>
+          <div class="mt-8 space-y-6 text-neutral-300 text-lg reveal">
+            <p>
+              El #VulgarFeast es la actividad insignia de Vulgar Topic, la
+              plataforma líder en la escena musical underground de Guadalajara,
+              México. Celebrado anualmente, este evento gratuito reúne a las
+              bandas más destacadas de Jalisco, y atrae a cientos de fanáticos
+              apasionados por la música extrema. En su tercera edición (2024),
+              el <b>Anexo Independencia</b>, sede del festival y un recinto conocido
+              por su relevancia para la escena, registró un aforo completo (300
+              personas). La cuarta entrega y con la que se celebra el décimo
+              aniversario de VT, se realizará el <b>18 de octubre de 2025</b> en el
+              mismo recinto. El #VulgarFeast promete otra jornada llena de
+              camaradería, energía y cultura underground.
+            </p>
+            <p>
+              El festival propone no solo la experiencia de la música en vivo
+              con bandas consagradas y emergentes de la escena jalisciense, sino
+              que incluye actividades previas de vinculación y generación de
+              comunidad, a través de un meeting para bandas, promotores y
+              agentes que dan vida a la comunidad metalera de la ciudad.
+            </p>
+            <p>
+              Asistencia esperada: En la edición 2025 se estima la participación
+              de 300 personas, aforo límite del recinto, y misma cantidad de
+              asistencia del año pasado.
+            </p>
+            <p>
+              Duración: Es una actividad que se realiza en un día, de 19:00
+              hasta las 00:30 horas.
+            </p>
+            <p>
+              Bandas y artistas: En ediciones anteriores han participado bandas
+              como Día de Cambio, Shemhamforash, Flores y Fuego, Aetherevm,
+              Sarcoma, Demonic Being y Mark Sinestra y el DJ Frank Metal
+              Máscara.
+            </p>
+            <p>
+              En la cuarta edición del festival, por primera vez se tendrá la
+              participación de talento extranjero al incluir en la alineación a
+              dos bandas estadounidenses.
+            </p>
+          </div>
+          <div class="mt-8 reveal">
+            <div
+              class="aspect-video w-full rounded-lg overflow-hidden border border-neutral-800 bg-black"
+            >
+              <iframe
+                class="w-full h-full"
+                src="https://www.youtube.com/embed/dUTtXtIxSfI"
+                title="YouTube video player"
+                frameborder="0"
+                loading="lazy"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Alcance digital -->
+      <section
+        id="alcance"
+        class="py-20 border-t border-neutral-900 bg-neutral-950"
+      >
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <h2
+            class="text-3xl sm:text-4xl font-bold reveal"
+            style="
+              font-family: Oswald, system-ui, -apple-system, 'Inter', Arial,
+                sans-serif;
+            "
+          >
+            Alcance digital
+          </h2>
+          <div class="mt-8 text-neutral-300 text-lg space-y-6 reveal">
+            <p>
+              Vulgar Feast es un evento con un fuerte impacto digital, impulsado
+              por la plataforma multimedia de Vulgar Topic. Nuestras
+              publicaciones sobre el #VulgarFeast 2024 y posts específicos
+              relacionados con los aliados generaron más de <b>500 mil impresiones</b>
+              y cientos de interacciones, que conectaron con una <b>audiencia joven</b>
+              (18 a 35 años). El podcast <b>Tópico Vulgar</b>, disponible en 
+               <a
+                href="https://open.spotify.com/show/5KaThh4dp8WEoR3YeAurhO"
+                target="_blank"
+                class="hover:text-white glitch-hover"
+                style="color: #39d52d"
+                >Spotify</a>,
+              amplificó la promoción del evento con episodios dedicados que
+              alcanzaron cientos de reproducciones, incluyendo entrevistas con
+              bandas participantes. En <b>2024</b>, el evento atrajo a <b>300 asistentes</b>
+              al Anexo Independencia, muchos de los cuales compartieron
+              contenido en redes sociales usando los hashtags #VulgarFeast y
+              #VulgarTopic9X, generando un alcance orgánico adicional a través
+              de contenido generado por usuarios (UGC). Para la edición <b>2025</b>
+              VulgarFeast 2025, proyectamos un crecimiento del 10-20% en nuestro
+              alcance digital, con publicaciones orgánicas y más contenido
+              patrocinado.
+            </p>
+          </div>
+          <div class="mt-8 reveal">
+            <div
+              class="aspect-[3/2] w-full rounded-xl overflow-hidden border border-neutral-800 bg-neutral-900/50"
+            >
+              <img
+                src="./assets/publico2.jpg"
+                alt="Público del festival - imagen 2"
+                class="h-full w-full object-cover object-center"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Ediciones anteriores -->
+      <section id="ediciones" class="py-20 border-t border-neutral-900">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <h2
+            class="text-3xl sm:text-4xl font-bold reveal"
+            style="
+              font-family: Oswald, system-ui, -apple-system, 'Inter', Arial,
+                sans-serif;
+            "
+          >
+            Ediciones anteriores
+          </h2>
+          <div class="mt-10 grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- 2024 -->
+            <article class="rounded-lg border border-neutral-800 bg-neutral-900/50 p-4 reveal">
+              <button class="block w-full appearance-none bg-transparent p-0" data-enlarge data-src="./assets/2024.jpg" aria-label="Ver flyer 2024">
+                <div class="aspect-[3/4] w-full overflow-hidden rounded border border-neutral-800 bg-neutral-900/40">
+                  <img src="./assets/2024.jpg" alt="Flyer Vulgar Feast 2024" class="h-full w-full object-cover object-center" loading="lazy" />
+                </div>
+              </button>
+              <div class="mt-4 space-y-2">
+                <h3 class="text-lg font-semibold">2024</h3>
+                <div class="text-sm text-neutral-300 space-y-1">
+                  <div><span class="text-neutral-400">Fecha:</span> 19 de octubre de 2024</div>
+                  <div><span class="text-neutral-400">Lugar:</span> Anexo Independencia</div>
+                  <div><span class="text-neutral-400">Line up:</span> Día de Cambio, Shemhamforash, Atrox, Öutlaw, Evercloud y Frank Metal Máscara</div>
+                  <div><span class="text-neutral-400">Asistencia:</span> Soldout (300 personas)</div>
+                </div>
+              </div>
+            </article>
+            <!-- 2023 -->
+            <article class="rounded-lg border border-neutral-800 bg-neutral-900/50 p-4 reveal">
+              <button class="block w-full appearance-none bg-transparent p-0" data-enlarge data-src="./assets/2023.png" aria-label="Ver flyer 2023">
+                <div class="aspect-[3/4] w-full overflow-hidden rounded border border-neutral-800 bg-neutral-900/40">
+                  <img src="./assets/2023.png" alt="Flyer Vulgar Feast 2023" class="h-full w-full object-cover object-center" loading="lazy" />
+                </div>
+              </button>
+              <div class="mt-4 space-y-2">
+                <h3 class="text-lg font-semibold">2023</h3>
+                <div class="text-sm text-neutral-300 space-y-1">
+                  <div><span class="text-neutral-400">Fecha:</span> 21 de octubre de 2023</div>
+                  <div><span class="text-neutral-400">Lugar:</span> Anexo Independencia</div>
+                  <div><span class="text-neutral-400">Line up:</span> Aetherevm, Flores y Fuego, Demonic Being, Mutanf From The Nebula, Speedfreak e Infection</div>
+                  <div><span class="text-neutral-400">Asistencia:</span> Soldout (300 personas)</div>
+                </div>
+              </div>
+            </article>
+            <!-- 2022 -->
+            <article class="rounded-lg border border-neutral-800 bg-neutral-900/50 p-4 reveal">
+              <button class="block w-full appearance-none bg-transparent p-0" data-enlarge data-src="./assets/2022.jpg" aria-label="Ver flyer 2022">
+                <div class="aspect-[3/4] w-full overflow-hidden rounded border border-neutral-800 bg-neutral-900/40">
+                  <img src="./assets/2022.jpg" alt="Flyer Vulgar Feast 2022" class="h-full w-full object-cover object-center" loading="lazy" />
+                </div>
+              </button>
+              <div class="mt-4 space-y-2">
+                <h3 class="text-lg font-semibold">2022</h3>
+                <div class="text-sm text-neutral-300 space-y-1">
+                  <div><span class="text-neutral-400">Fecha:</span> 4 de noviembre de 2022</div>
+                  <div><span class="text-neutral-400">Lugar:</span> Anexo Independencia</div>
+                  <div><span class="text-neutral-400">Line up:</span> Sarcoma, Visceral Abnormality, Mark Sinestra, Calles de Odio, The Graveyard Shift y Frank Metal Máscara</div>
+                  <div><span class="text-neutral-400">Asistencia:</span> 210 personas</div>
+                </div>
+              </div>
+            </article>
+          </div>
+          
+          <!-- Modal de imagen para flyers -->
+          <div id="imageModal" class="fixed inset-0 z-[60] hidden flex items-center justify-center h-screen">
+            <div id="imageOverlay" class="absolute inset-0 bg-black/80 backdrop-blur-sm"></div>
+            <div class="relative z-[61] w-full max-w-5xl p-4 sm:p-6 max-h-[90vh] overflow-auto">
+              <div class="rounded-xl border border-neutral-800 bg-neutral-900/90 shadow-xl">
+                <div class="flex items-start justify-between p-3 border-b border-neutral-800">
+                  <h3 class="text-lg font-semibold">Flyer</h3>
+                  <button id="imageModalClose" class="ml-4 text-neutral-400 hover:text-white p-2 rounded focus:outline-none focus:ring-2 focus:ring-brand-600" aria-label="Cerrar">
+                    <svg class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.225 4.811 4.811 6.225 10.586 12l-5.775 5.775 1.414 1.414L12 13.414l5.775 5.775 1.414-1.414L13.414 12l5.775-5.775-1.414-1.414L12 10.586z"/></svg>
+                  </button>
+                </div>
+                <div class="p-3 sm:p-6">
+                  <img id="imageModalImg" src="" alt="Flyer" class="w-full h-auto rounded-lg border border-neutral-800" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer (reutilizado) -->
+    <footer class="border-t border-neutral-900 py-10">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div
+          class="flex flex-col md:flex-row items-start md:items-center justify-between gap-6"
+        >
+          <div>
+            <p class="font-semibold">Vulgar Topic</p>
+            <p class="text-sm text-neutral-400">
+              Revista electrónica 2015–2025
+            </p>
+          </div>
+          <div class="flex items-center gap-4 text-sm text-neutral-300">
+            <a
+              href="https://facebook.com/vlgtpx"
+              class="hover:text-white glitch-hover"
+              >Facebook</a
+            >
+            <a
+              href="https://instagram.com/vulgartopic"
+              class="hover:text-white glitch-hover"
+              >Instagram</a
+            >
+            <a
+              href="https://youtube.com/@VulgarTopic"
+              class="hover:text-white glitch-hover"
+              >YouTube</a
+            >
+          </div>
+        </div>
+        <p class="mt-6 text-xs text-neutral-500">
+          © 2025 Vulgar Topic. Todos los derechos reservados.
+        </p>
+      </div>
+    </footer>
+
+    <script src="./main.js"></script>
+  </body>
+</html>

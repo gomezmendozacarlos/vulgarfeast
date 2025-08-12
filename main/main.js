@@ -150,3 +150,47 @@ lineupCards.forEach((card) => {
     }
   });
 });
+
+// Image modal for flyers (acercade.html)
+(function setupImageModal() {
+  const modal = document.getElementById('imageModal');
+  if (!modal) return; // Only on acercade.html
+
+  const modalImg = document.getElementById('imageModalImg');
+  const modalClose = document.getElementById('imageModalClose');
+  const overlay = document.getElementById('imageOverlay');
+  const triggers = document.querySelectorAll('[data-enlarge]');
+
+  const open = (src) => {
+    if (!src) return;
+    modalImg.setAttribute('src', src);
+    modal.classList.remove('hidden');
+    document.body.classList.add('overflow-hidden');
+  };
+
+  const close = () => {
+    modalImg.setAttribute('src', '');
+    modal.classList.add('hidden');
+    document.body.classList.remove('overflow-hidden');
+  };
+
+  triggers.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const src = btn.getAttribute('data-src');
+      open(src);
+    });
+    btn.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        const src = btn.getAttribute('data-src');
+        open(src);
+      }
+    });
+  });
+
+  if (modalClose) modalClose.addEventListener('click', close);
+  if (overlay) overlay.addEventListener('click', close);
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && !modal.classList.contains('hidden')) close();
+  });
+})();
