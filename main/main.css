@@ -35,3 +35,15 @@ body {
 .glitch, .glitch-hover:hover {
   animation: glitch-jitter 750ms steps(2, end) infinite;
 }
+
+.map-container {
+  width: 640px;
+  
+  overflow: hidden;
+  position: relative;
+}
+
+.map-container iframe {
+  top: -70px; /* Ajusta este valor si la barra sigue visible */
+  position: absolute;
+}
