@@ -1,7 +1,7 @@
 {
     "hosting": {
       "site": "vulgarfeast-59bd5",
-      "public": "public",
+      "public": ".",
       "ignore": [
         "firebase.json",
         "**/.*",
